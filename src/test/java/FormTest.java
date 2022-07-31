@@ -12,7 +12,7 @@ public class FormTest {
         open("http://localhost:9999/");
     }
 
-    // POSITIVE
+
     @Test
     void shouldSendForm() {
         SelenideElement form = $(".form");
