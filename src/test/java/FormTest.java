@@ -12,7 +12,11 @@ public class FormTest {
         open("http://localhost:9999/");
     }
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> e88fc076dc0f6a82af9493550e3aebcdea04c354
     @Test
     void shouldSendForm() {
         SelenideElement form = $(".form");

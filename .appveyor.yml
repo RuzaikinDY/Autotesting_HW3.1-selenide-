@@ -10,8 +10,13 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
-  - java -jar ./artifacts/app-mbank.jar &
-  - chmod +x gradlew
+  - java -jar ./artifacts/app-order.jar &
+  
 
 build_script:
+<<<<<<< HEAD
   - ./gradlew test --info "-Dselenide.headless=true" # запускаем тест, флаг --info позволяет выводить больше информации
+=======
+  - chmod +x gradlew
+  - ./gradlew test --info -Dselenide.headless=true 
+>>>>>>> e88fc076dc0f6a82af9493550e3aebcdea04c354
